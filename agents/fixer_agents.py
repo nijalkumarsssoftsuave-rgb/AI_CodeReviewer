@@ -1,35 +1,27 @@
-from llm_client import request_fix
-from runner import run_code
-from config import MAX_RETRIES
+from utils.llm_client import call_llm
 
-def read_file(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
+SYSTEM_PROMPT = """
+You are a Python syntax repair engine.
 
-def write_file(path, content):
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
+Rules:
+- Return ONLY corrected Python code
+- No explanations
+- No markdown
+- Preserve original logic
+- Fix syntax errors only
+"""
 
-def autonomous_fix_loop(filepath: str):
-    retries = 0
+def request_fix(code: str, error_msg: str) -> str:
+    user_prompt = f"""
+The following Python code contains a syntax error.
 
-    while retries < MAX_RETRIES:
-        retries += 1
+Error:
+{error_msg}
 
-        code = read_file(filepath)
-        success, output = run_code(filepath)
+Code:
+{code}
 
-        if success:
-            print(f"\n✔ Code executed successfully (iteration {retries})")
-            print(output)
-            return
+Return corrected Python code only.
+"""
 
-        print(f"\n✖ Failure detected (iteration {retries})")
-        print(output)
-
-        fixed_code = request_fix(code, output)
-
-        write_file(filepath, fixed_code)
-        print("\n↺ Applied LLM fix")
-
-    print("\n⚠ Max retries reached. Manual review required.")
+    return call_llm(SYSTEM_PROMPT, user_prompt)

@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb19ab5-74e5-4615-89b6-96645ccd6146" name="Changes" comment="" />
+    <list default="true" id="bbb19ab5-74e5-4615-89b6-96645ccd6146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agents/reasoning_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agents/validation_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broken_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broken_code.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nijal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nijal.java.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/agentic_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/file_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/llm_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agents/executor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agents/fixer_agents.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents/fixer_agents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agents/llm_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agents/runnner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/ai_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/ai_config.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "nijalkumarsssoftsuave-rgb"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nijalkumarsssoftsuave-rgb&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nijalkumarsssoftsuave-rgb/AI_CodeReviewer.git",
-    "accountId": "3ea74f43-c7b7-4ffe-9f18-9ad282b661b3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nijalkumarsssoftsuave-rgb/AI_CodeReviewer.git&quot;,
+    &quot;accountId&quot;: &quot;3ea74f43-c7b7-4ffe-9f18-9ad282b661b3&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -45,8 +65,10 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "Feb-12",
-    "last_opened_file_path": "C:/Users/Softsuave/Desktop/Nijal_python/AI_codeReviewer"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Feb-13",
+    "last_opened_file_path": "C:/Users/Softsuave/Desktop/Nijal_python/AI_codeReviewer",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SharedIndexes">
