@@ -12,5 +12,5 @@ def call_llm(system_prompt: str, user_prompt: str) -> str:
             {"role": "user", "content": user_prompt},
         ],
     )
-
     return response.output_text.strip()
+

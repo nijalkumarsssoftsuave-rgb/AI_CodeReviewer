@@ -1,11 +1,21 @@
-class Nijal {
+```c
+#include <stdio.h>
 
-    static int a = 1;
-    static int b = 0;
+struct Nijal {
+    int a;
+    int b;
+};
 
-    void printSum() {
-        System.out.println(a + b);
-    }
+void Nijalll(struct Nijal *nijalInstance) {
+    printf("%d\n", nijalInstance->a + nijalInstance->b);
 }
 
-System.out.println(Nijal.b);
+int main() {
+    struct Nijal nijalInstance;
+    nijalInstance.a = 1;
+    nijalInstance.b = 0;
+    Nijalll(&nijalInstance);
+    printf("%d\n", nijalInstance.b);
+    return 0;
+}
+```
