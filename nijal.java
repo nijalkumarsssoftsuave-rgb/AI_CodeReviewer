@@ -5,7 +5,6 @@ struct Nijal {
     int a;
     int b;
 };
-
 void Nijalll(struct Nijal *nijalInstance) {
     printf("%d\n", nijalInstance->a + nijalInstance->b);
 }
