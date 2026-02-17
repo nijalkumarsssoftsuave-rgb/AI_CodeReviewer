@@ -1,7 +1,0 @@
-a = [1,2,3,44,55]
-
-def call(self):
-    print(b)
-    b = 0
-
-print(b)

@@ -1,5 +1,9 @@
 .env
 *.pyc
-.venv
-.idea
+*.py[cod]
+
+venv/
+.venv/
+
+.idea/
 .bak
