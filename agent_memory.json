@@ -1,0 +1,103 @@
+{
+  "successful_fixes": [
+    {
+      "instruction": "Convert the coding to c++ ",
+      "score": 100,
+      "language": "C++"
+    },
+    {
+      "instruction": "Change the code to java",
+      "score": 100,
+      "language": "Java"
+    },
+    {
+      "instruction": "Change the code to java",
+      "score": 100,
+      "language": "Java"
+    },
+    {
+      "instruction": "Change the code to python",
+      "score": 100,
+      "language": "Python"
+    },
+    {
+      "instruction": "Fix the error in the code",
+      "score": 100,
+      "language": "Python",
+      "tokens": 2309
+    },
+    {
+      "instruction": "add a multiplication funtion in the code",
+      "score": 90,
+      "language": "Python",
+      "tokens": 2391
+    }
+  ],
+  "history": "None",
+  "iteration_log": [
+    {
+      "iteration": 0,
+      "event": "decision",
+      "score": 100,
+      "accepted": true
+    },
+    {
+      "iteration": 0,
+      "event": "decision",
+      "accepted": true,
+      "score": 100,
+      "threshold": 90,
+      "reason": "Accepted: score 100 meets or exceeds threshold 90"
+    },
+    {
+      "iteration": 0,
+      "event": "decision",
+      "accepted": true,
+      "score": 100,
+      "threshold": 90,
+      "reason": "Accepted: score 100 meets or exceeds threshold 90"
+    },
+    {
+      "iteration": 0,
+      "event": "decision",
+      "tokens": 1989,
+      "accepted": false,
+      "score": 85,
+      "threshold": 90,
+      "reason": "Rejected: score 85 below threshold 90"
+    },
+    {
+      "iteration": 1,
+      "event": "decision",
+      "tokens": 2123,
+      "accepted": false,
+      "score": 85,
+      "threshold": 90,
+      "reason": "Rejected: score 85 below threshold 90"
+    },
+    {
+      "iteration": 2,
+      "event": "early_stop",
+      "reason": "Early stopping: score plateau detected (score=85)",
+      "tokens": 2444
+    },
+    {
+      "iteration": 0,
+      "event": "decision",
+      "tokens": 2309,
+      "accepted": true,
+      "score": 100,
+      "threshold": 90,
+      "reason": "Accepted: score 100 meets or exceeds threshold 90"
+    },
+    {
+      "iteration": 0,
+      "event": "decision",
+      "tokens": 2391,
+      "accepted": true,
+      "score": 90,
+      "threshold": 90,
+      "reason": "Accepted: score 90 meets or exceeds threshold 90"
+    }
+  ]
+}

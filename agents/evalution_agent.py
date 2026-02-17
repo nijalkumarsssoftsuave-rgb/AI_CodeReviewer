@@ -1,4 +1,4 @@
-
+from typing import Tuple, Dict
 
 from utils.llm_client import call_llm
 
@@ -13,7 +13,7 @@ Score 0–100 based on:
 Return ONLY the number.
 """
 
-def evaluate_fix(code: str, instruction: str) -> int:
+def evaluate_fix(code: str, instruction: str) -> Tuple[int,Dict]:
     prompt = f"""
 Instruction:
 {instruction}
@@ -21,9 +21,9 @@ Instruction:
 Code:
 {code}
 """
-    text = call_llm(SYSTEM_PROMPT, prompt)
+    text,tokens = call_llm(SYSTEM_PROMPT, prompt)
 
     try:
-        return int(text)
+        return int(text), tokens
     except:
-        return 0
+        return 0,tokens

@@ -1,3 +1,5 @@
+from typing import Tuple, Dict
+
 from utils.llm_client import call_llm
 
 SYSTEM_PROMPT = """
@@ -14,7 +16,7 @@ or
 INVALID: <short reason>
 """
 
-def validate_code(code: str, language_hint: str):
+def validate_code(code: str, language_hint: str)-> Tuple[bool, str, Dict]:
 
     prompt = f"""
 Language:
@@ -23,13 +25,12 @@ Language:
 Code:
 {code}
 """
-
-    result = call_llm(SYSTEM_PROMPT, prompt).strip()
+    result,tokens = call_llm(SYSTEM_PROMPT, prompt)
 
     if result.startswith("VALID"):
-        return True, "OK"
+        return True, "OK", tokens
 
     if result.startswith("INVALID"):
-        return False, result
+        return False, result, tokens
 
-    return False, "Validator produced unexpected response"
+    return False, "Validator produced unexpected response", tokens

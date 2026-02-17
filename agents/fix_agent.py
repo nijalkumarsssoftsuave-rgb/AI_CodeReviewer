@@ -1,3 +1,5 @@
+from typing import Dict,Tuple
+
 from utils.llm_client import call_llm
 
 SYSTEM_PROMPT = """
@@ -11,7 +13,7 @@ Rules:
 - Return ONLY code
 """
 
-def generate_fix(code: str, instruction: str, review: str) -> str:
+def generate_fix(code: str, instruction: str, review: str) -> Tuple[str,Dict]:
     prompt = f"""
 Instruction:
 {instruction}
@@ -24,4 +26,8 @@ Code:
 
 Return updated code only.
 """
-    return call_llm(SYSTEM_PROMPT, prompt)
+    response,tokens = call_llm(SYSTEM_PROMPT, prompt)
+
+    print(f"\n\nFix_agent : {response}")
+
+    return response,tokens
